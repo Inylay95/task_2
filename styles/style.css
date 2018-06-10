@@ -232,6 +232,14 @@ col-6 {
     .container {
       max-width: 1345px;
       margin: 15px;
+    }
+    p.main.text{
+      color:black;
+    }
+    .footer {
+      padding: 30px 0;
+      background:rgb(108, 206, 152);;
+  }
 }
 
 
