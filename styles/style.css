@@ -187,14 +187,17 @@ line-height: 24px;
   margin-bottom: 0;
 }
 
-@media (max-width:900px){
- body{
-  background: aqua;
+@media (min-width:500px) and (max-width:991px){
+ .header{
+  background: rgb(29, 82, 9);
  } 
-
-.text{
-color:white;
-}
+ .left-row{
+  background:greenyellow;
+ }
+ .section{
+  border:none; 
+  background:greenyellow;
+ }
 
 
 
