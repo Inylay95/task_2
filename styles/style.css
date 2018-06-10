@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header {
+  background: rgb(36, 95, 221);
+  padding: 10px 0;
+}
+
+.row {
+  display: flex;
+  margin: 0 -15px;
+}
+
+/*Так писать нельзя Описание ниже*/
+
+
+.no-gutters {
+  margin: 0;
+}
+
+.pad-15 {
+  padding: 0 15px;
+}
+
+.justify-content {
+  justify-content: space-between;
+}
+
+.left-row {
+  height: 40px;
+  width: 130px;
+  background: yellow;
+  border-radius: 10px;
+
+}
+
+.right-row {
+  display: flex;
+  float: left;
+  margin-top: 15px;
+  list-style: none;
+}
+
+.section {
+  height: 15px;
+  width: 100px;
+  background: yellow;
+  border-radius: 10px;
+  margin-left: 15px;
+  border: 2px solid rgb(124, 166, 243);
+}
+
+.container {
+  /*display: flex;
+  text-align: justify;
+  margin-top: 30px;
+  margin-bottom: 30px;*/
+  max-width: 1345px;
+  margin: 0 auto;
+}
+
+/*еще раз посмотри эту сетку для закрепления
+можешь потыкать и посмотреть как они себя ведут на разных значениях
+*/
+.col-2 {
+  width: 16.666667%;
+  padding: 0 15px;
+}
+
+.col-3 {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.col-4 {
+  width: 33.333333%;
+  padding: 0 15px;
+}
+
+.col-6 {
+  width: 50%;
+  padding: 0 15px;
+}
+
+.hello {
+  padding: 50px 0;
+}
+
+.caption {
+  font-style: normal;
+  text-align: center;
+  font-weight: bold;
+  font-size: 150%;
+  margin-top: 0;
+}
+
+.text {
+  display: block;
+  text-align: justify;
+  font-style: normal;
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  background: rgb(96, 139, 96);
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 200px;
+  border: 4px solid rgb(29, 101, 233);
+  float: left;
+  /* border:10px;
+  border-color:rgb(37, 145, 196);/не работает почему то?* */
+}
+
+.square {
+  /*width: 641px;*/
+  height: 200px;
+  background: rgb(110, 58, 114);
+}
+
+.line {
+  background: rgb(96, 139, 96);
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  padding: 30px;
+  font-size: 150%;
+  margin: 0;
+}
+
+.footer {
+  padding: 30px 0;
+}
+
+/*Плохое название. Пусть будет footer__logo например
+ Вспоминаем БЕМ (блок, елемент, модификатор)
+ footer-это блок
+ logo-улемент
+ Очень читабельно
+*/
+.footer_logo {
+  height: 82px;
+  width: 251px;
+  background: yellow;
+}
+
+.align-items {
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*Нельзя писать так классы.
+ Во первых такого класса нет у тебя в html у тебя там footer-menu__item
+ а во вторых li это тег, надо было писать без точки, что тоже плохо,
+ так как применишь это ко всем элементам списков которые согут быть на сайте.
+ Выше ты именно так и сделала! Исправляем */
+ 
+.footer-menu{
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.footer_form{
+  background: rgb(77, 59, 105);
+  border-radius: 10px;
+  /*margin-top: 15px;
+  margin-left: 60px;*/
+  border: 2px solid rgb(124, 166, 243);
+  margin-bottom: 20px;
+  height: 30px
+}
+p {
+line-height: 24px;
+
+}
+
+
+
+/*ВНИМАТЕЛЬНО посмтори на этот класс и класс в html*/
+.footer_form:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width:900px){
+ body{
+  background: aqua;
+ } 
+
+.text{
+color:white;
+}
+
+
+
