@@ -229,6 +229,9 @@ col-6 {
     p{
       font-style:oblique;
     }
+    .container {
+      max-width: 1345px;
+      margin: 15px;
 }
 
 
