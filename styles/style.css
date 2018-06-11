@@ -258,3 +258,12 @@ p {
     background: yellow;
   }
 }
+@media (max-width:900px){
+ body{
+  background: aqua;
+ } 
+
+.text{
+color:white;
+}
+}
