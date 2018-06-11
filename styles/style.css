@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
-
 body {
   margin: 0;
   padding: 0;
@@ -18,7 +17,6 @@ body {
 
 /*Так писать нельзя Описание ниже*/
 
-
 .no-gutters {
   margin: 0;
 }
@@ -36,7 +34,6 @@ body {
   width: 130px;
   background: yellow;
   border-radius: 10px;
-
 }
 
 .right-row {
@@ -67,6 +64,7 @@ body {
 /*еще раз посмотри эту сетку для закрепления
 можешь потыкать и посмотреть как они себя ведут на разных значениях
 */
+
 .col-2 {
   width: 16.666667%;
   padding: 0 15px;
@@ -144,6 +142,7 @@ body {
  logo-улемент
  Очень читабельно
 */
+
 .footer_logo {
   height: 82px;
   width: 251px;
@@ -160,13 +159,14 @@ body {
  а во вторых li это тег, надо было писать без точки, что тоже плохо,
  так как применишь это ко всем элементам списков которые согут быть на сайте.
  Выше ты именно так и сделала! Исправляем */
- 
-.footer-menu{
+
+.footer-menu {
   list-style: none;
   margin-bottom: 0;
   padding-left: 0;
 }
-.footer_form{
+
+.footer_form {
   background: rgb(77, 59, 105);
   border-radius: 10px;
   /*margin-top: 15px;
@@ -175,90 +175,86 @@ body {
   margin-bottom: 20px;
   height: 30px
 }
-p {
-line-height: 24px;
 
+p {
+  line-height: 24px;
 }
 
-
-
 /*ВНИМАТЕЛЬНО посмтори на этот класс и класс в html*/
+
 .footer_form:last-child {
   margin-bottom: 0;
 }
 
-
 @media (min-width:500px) and (max-width:900px) {
- .hello{
-  background: rgb(108, 206, 152);
- } 
-
-.col-2 {
-   width:0;
-   padding: 0; 
-}
-.circle{
-  display: none;
-}
-.col-4 {
-  width: 50%;
-  padding: 0 15px;
-}
-  .left-row{
-  background:greenyellow;
- }
- .section{
-  border:none; 
-  background:greenyellow;
- }
-
-col-6 {
- width: 50%; 
- padding: 0 15px;
-}
-.square {
-  height: 200px;
-  background: rgb(110, 58, 114);
-  border-radius: 10px;
-  border: 2px solid rgb(248, 248, 248);
-}
-  .text{
+  .hello {
+    background: rgb(108, 206, 152);
+  }
+  .col-2 {
+    width: 0;
+    padding: 0;
+  }
+  .circle {
+    display: none;
+  }
+  .col-4 {
+    width: 50%;
+    padding: 0 15px;
+  }
+  .left-row {
+    background: greenyellow;
+  }
+  .section {
+    border: none;
+    background: greenyellow;
+  }
+  col-6 {
+    width: 50%;
+    padding: 0 15px;
+  }
+  .square {
+    height: 200px;
+    background: rgb(110, 58, 114);
+    border-radius: 10px;
+    border: 2px solid rgb(248, 248, 248);
+  }
+  .text {
     font-family: Arial;
-    font-style:oblique;
+    font-style: oblique;
     color: white;
     margin-left: 15px;
   }
-  .caption{
-    color:  rgb(110, 58, 114);
-    font-style:oblique;
+  .caption {
+    color: rgb(110, 58, 114);
+    font-style: oblique;
   }
   .line {
-    background:  rgb(110, 58, 114);
+    background: rgb(110, 58, 114);
   }
-    p{
-      font-style:oblique;
-    }
-    .container {
-      max-width: 1345px;
-      margin: 15px;
-    }
-    p.main.text{
-      color:black;
+  p {
+    font-style: oblique;
   }
-    .footer {
-      padding: 30px 0;
-      background:rgb(108, 206, 152);;
+  .container {
+    max-width: 1345px;
+    margin: 15px;
   }
-  .footer .row{
-    flex-wrap: wrap; 
+  p.main.text {
+    color: black;
   }
-  .col-3{
+  .footer {
+    padding: 30px 0;
+    background: rgb(108, 206, 152);
+    ;
+  }
+  .footer .row {
+    flex-wrap: wrap;
+  }
+  .col-3 {
     width: 100%;
   }
-  .footer_logo{
+  .footer_logo {
     width: 100%;
     height: 82px;
     background: yellow;
   }
-  }
-
+}
